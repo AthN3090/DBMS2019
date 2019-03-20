@@ -14,7 +14,7 @@
 				<div class="wrap">
 				<!--start-logo-->
 				<div class="logo">
-					<a href="index.html" style="font-size: 30px;">Hospital Management system</a>
+					<a href="index.html" style="font-size: 30px;font-family:cursive;colour:#3391E7">Hospital Management system</a>
 				</div>
 				<!--end-logo-->
 				<!--start-top-nav-->
