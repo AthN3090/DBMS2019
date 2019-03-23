@@ -1,18 +1,12 @@
 <?php
-session_start();
-?>
-<!DOCTYPE html>
-<html>
-<body>
-<?php
-// remove all session variables
-session_unset();
-// destroy the session
-session_destroy();
-echo '<script type="text/javascript">
-           window.location = "index.php"
-      </script>'
-?>
+/*
+Author: Javed Ur Rehman
+Website: http://www.allphptricks.com/
+*/
 
-</body>
-</html>
+session_start();
+if(session_destroy()) // Destroying All Sessions
+{
+header("Location: login.php"); // Redirecting To Home Page
+}
+?>

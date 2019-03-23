@@ -1,33 +1,7 @@
-<?php
-    if (!isset($_SESSION)) {
-        session_start();
-    }
-?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title> Sunrise Hospital
-    </title>
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <link href="jumbotron.css" rel="stylesheet">
-  </head>
-  <body>
-      <div class="container" style="padding-top: 10px;">
-        <nav class="navbar  navbar-static-top">
-          <a class="navbar-brand">🌅 Sunrise Hospital</a>
-            <ul class="nav nav-pills">
-              <li class="nav-item">
-                <a href="https://goo.gl/maps/PyT52gM87su" target="_blank"> Address: Plot no- 1, Opposite SBI, Sector 12, Kharghar, Navi Mumbai</a>
-              </li>
-              <li class="nav-item">
-                <a class="" href="tel:+917709473553">Ambulance Number: +91 7709473553</a>
-              </li>
-              <?php
-                if (isset($_SESSION['username'])) {
-                    echo '<li class="nav-item" style="align-items: right;"> <a class="nav-link" href="logout.php">Logout</a>
-                  </li>';
-                }
-              ?>
-            </ul>
-        </nav>
-        </div>
+
+<a href="index.php?page=add-doctor"><b style="color:#CC0000"> Add doctor</b></a>&nbsp; |&nbsp;
+<a href="index.php?page=doctor-list"><b style="color:#CC0000"> Doctor list</b></a>&nbsp; |&nbsp;
+<a href="index.php?page=add-patient"><b style="color:#CC0000">Add Patient</b></a> &nbsp; |&nbsp;
+<a href="index.php?page=patient-list"><b style="color:#CC0000">Patient list</b></a> &nbsp; |&nbsp;
+<a href="index.php?page=add-appointment"><b style="color:#CC0000">Add Appointment</b></a>  &nbsp; |&nbsp;
+<a href="index.php?page=appointment-list"><b style="color:#CC0000">Appointment list</b></a>
